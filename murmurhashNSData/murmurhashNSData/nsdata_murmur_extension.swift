@@ -11,12 +11,10 @@ import Foundation
 extension NSData {
     
     var MurMurHash : UInt32 {
-        return self.MurMurHash(UInt32(0))
-    }
-    
-    func MurMurHash (seed: UInt32) -> UInt32{
-        let data = mydata.bytes
-        let size = mydata.length
-        return murmurhash(UnsafePointer<Int8>(data), UInt32(size), seed)
+        get {
+                let data = mydata.bytes
+                let size = mydata.length
+                return murmurhash(UnsafePointer<Int8>(data), UInt32(size), UInt32(0))
+        }
     }
 }
