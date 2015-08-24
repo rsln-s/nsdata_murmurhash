@@ -15,7 +15,3 @@ let mydata = NSData(contentsOfURL: myurl!)!
 let myhash = mydata.MurMurHash
 
 println("murhash is \(myhash)")
-
-//let mynewhash = mydata.MurMurHash()
-//
-//println("murhash is \(mynewhash)")
