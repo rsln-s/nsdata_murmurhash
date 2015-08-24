@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		446514C91B8B5983007E63F4 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446514C81B8B5983007E63F4 /* main.swift */; };
-		446514D01B8B59AF007E63F4 /* nsdata_murmur_extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446514CF1B8B59AF007E63F4 /* nsdata_murmur_extension.swift */; };
+		446514D01B8B59AF007E63F4 /* NSDataConvenientHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446514CF1B8B59AF007E63F4 /* NSDataConvenientHash.swift */; };
 		446514E51B8B5DFB007E63F4 /* murmurhash.c in Sources */ = {isa = PBXBuildFile; fileRef = 446514E31B8B5DFB007E63F4 /* murmurhash.c */; };
 /* End PBXBuildFile section */
 
@@ -27,7 +27,7 @@
 /* Begin PBXFileReference section */
 		446514C51B8B5983007E63F4 /* murmurhashNSData */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = murmurhashNSData; sourceTree = BUILT_PRODUCTS_DIR; };
 		446514C81B8B5983007E63F4 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		446514CF1B8B59AF007E63F4 /* nsdata_murmur_extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = nsdata_murmur_extension.swift; sourceTree = "<group>"; };
+		446514CF1B8B59AF007E63F4 /* NSDataConvenientHash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDataConvenientHash.swift; sourceTree = "<group>"; };
 		446514E21B8B5DFA007E63F4 /* murmurhashNSData-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "murmurhashNSData-Bridging-Header.h"; sourceTree = "<group>"; };
 		446514E31B8B5DFB007E63F4 /* murmurhash.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = murmurhash.c; sourceTree = "<group>"; };
 		446514E41B8B5DFB007E63F4 /* murmurhash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = murmurhash.h; sourceTree = "<group>"; };
@@ -66,7 +66,7 @@
 				446514E31B8B5DFB007E63F4 /* murmurhash.c */,
 				446514E41B8B5DFB007E63F4 /* murmurhash.h */,
 				446514C81B8B5983007E63F4 /* main.swift */,
-				446514CF1B8B59AF007E63F4 /* nsdata_murmur_extension.swift */,
+				446514CF1B8B59AF007E63F4 /* NSDataConvenientHash.swift */,
 				446514E21B8B5DFA007E63F4 /* murmurhashNSData-Bridging-Header.h */,
 			);
 			path = murmurhashNSData;
@@ -129,7 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				446514E51B8B5DFB007E63F4 /* murmurhash.c in Sources */,
-				446514D01B8B59AF007E63F4 /* nsdata_murmur_extension.swift in Sources */,
+				446514D01B8B59AF007E63F4 /* NSDataConvenientHash.swift in Sources */,
 				446514C91B8B5983007E63F4 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -255,6 +255,7 @@
 				446514CE1B8B5983007E63F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
