@@ -9,9 +9,15 @@
 import Foundation
 
 extension NSData {
+    func MurMurHash () -> UInt32{
+        let datastr = mydata.description
+        let mydatastr = datastr.cStringUsingEncoding(NSUTF8StringEncoding)
+        return murmurhash(mydatastr!, UInt32(strlen(mydatastr!)), UInt32(0))
+
+    }
     func MurMurHash (seed: UInt32) -> UInt32{
-        let datastr = NSString(data: self, encoding: NSUTF8StringEncoding)
-        let mydatastr = datastr?.cStringUsingEncoding(NSUTF8StringEncoding)
+        let datastr = mydata.description
+        let mydatastr = datastr.cStringUsingEncoding(NSUTF8StringEncoding)
         return murmurhash(mydatastr!, UInt32(strlen(mydatastr!)), seed)
     }
 }

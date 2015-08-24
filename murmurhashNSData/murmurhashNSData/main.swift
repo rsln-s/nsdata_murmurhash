@@ -10,10 +10,12 @@ import Foundation
 
 println("Hello, World!")
 
-//var mysrt = "jhfljhfh".cStringUsingEncoding(NSUTF8StringEncoding)
 let myurl = NSURL(string: "http://www.newyorker.com/wp-content/uploads/2015/08/150831_r26907-863.jpg")
 let mydata = NSData(contentsOfURL: myurl!)!
-
 let myhash = mydata.MurMurHash(UInt32(0))
 
-println(" hash is \(myhash)")
+println("murhash is \(myhash)")
+
+let mynewhash = mydata.MurMurHash()
+
+println("murhash is \(mynewhash)")
