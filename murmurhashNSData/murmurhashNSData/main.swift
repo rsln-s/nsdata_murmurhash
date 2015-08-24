@@ -12,10 +12,10 @@ println("Hello, World!")
 
 let myurl = NSURL(string: "http://www.newyorker.com/wp-content/uploads/2015/08/150831_r26907-863.jpg")
 let mydata = NSData(contentsOfURL: myurl!)!
-let myhash = mydata.MurMurHash(UInt32(0))
+let myhash = mydata.MurMurHash
 
 println("murhash is \(myhash)")
 
-let mynewhash = mydata.MurMurHash()
-
-println("murhash is \(mynewhash)")
+//let mynewhash = mydata.MurMurHash()
+//
+//println("murhash is \(mynewhash)")

@@ -9,15 +9,18 @@
 import Foundation
 
 extension NSData {
-    func MurMurHash () -> UInt32{
-        let datastr = mydata.description
-        let mydatastr = datastr.cStringUsingEncoding(NSUTF8StringEncoding)
-        return murmurhash(mydatastr!, UInt32(strlen(mydatastr!)), UInt32(0))
-
+    
+    var MurMurHash : UInt32 {
+        get {
+                let data = mydata.bytes
+                let size = mydata.length
+                return murmurhash(UnsafePointer<Int8>(data), UInt32(size), UInt32(0))
+        }
     }
-    func MurMurHash (seed: UInt32) -> UInt32{
-        let datastr = mydata.description
-        let mydatastr = datastr.cStringUsingEncoding(NSUTF8StringEncoding)
-        return murmurhash(mydatastr!, UInt32(strlen(mydatastr!)), seed)
-    }
+    
+//    func MurMurHash (seed: UInt32) -> UInt32{
+//        let data = mydata.bytes
+//        let size = mydata.length
+//        return murmurhash(UnsafePointer<Int8>(data), UInt32(size), seed)
+//    }
 }
